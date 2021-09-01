@@ -48,6 +48,29 @@ section{
       width: 93%;
       margin: 30px;   
   }
+  .flex-container-Title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* align-self: center; */
+    font-family: Metropolis;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 40px;
+    padding-left: 60px;
+
+  }
+  .flex-container2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-self: center; */
+    font-family: Metropolis;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 40px;
+    /* width: 90%; */
+  }
   .box{
       display: flex;
       /* justify-content: space-evenly; */
