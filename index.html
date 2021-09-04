@@ -51,11 +51,11 @@
             </div>
             <hr>
         </div>
-        <div class="flex-container-Title">
+        <div class="flex-customerOrder">
           <div><h2>Anna's orders</h2></div>
-          <div>Help</div>
+          <div id="help"><button class="i-btn">i</button>Help</div>
         </div>
-        <div class="flex-container2">
+        <div class="flex-Heading">
           <div>Order number</div>
           <div>Created</div>
           <div>Store</div>
@@ -63,13 +63,30 @@
           <div>Payment status</div>
           <div>Amount</div>
         </div>
-
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-    </section>    
+        <div class="flex-boxes">
+          <span class="box">
+            <span class="onlineTag">Online</span>
+            <span class="orderNumber">1234567890</span><span id="orderNumber"><img src="Assets/corner-down-right.svg" alt=""></span>
+            <!-- <span>05 maj, 12:33</span>
+            <span>Butik X</span>
+            <span>Invoice</span>
+            <span>Paid</span>
+            <span>2160 kr</span> -->
+          </span>
+          <span class="box"><span class="instoreTag">Instore</span></span>
+          <span class="box"><span class="manualTag">Manual</span></span>
+          <span class="box"><span class="onlineTag">Online</span>
+          <span class="upsell"><img src="Assets/Upsell.svg" alt="Flag"></span>
+          </span>
+          <span class="box"><span class="instoreTag">Instore</span></span>
+        </div>
+        <!-- Pagination -->
+        <div class="pagination">
+          <a class="inactive" href="#">Back</a>
+          <a class="active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">Next</a>
+        </div>
+    </section>
 </body>
 </html>

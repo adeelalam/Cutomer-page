@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: Metropolis;
 }
 @font-face {
     font-family: Metropolis;
@@ -13,21 +14,18 @@ nav{
     background-color: #FFFFFF;
 }
 nav h1{
-    font-family: Metropolis;
-    font-weight: 600;
     font-size: 20px;
     padding: 28px 70px 28px;
 }
 section{
-    height: 100vh;
-    background-color: #E5E5E5;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    /* background-color: #E5E5E5; */
 }
 .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    /* align-self: center; */
-    font-family: Metropolis;
     font-size: 14px;
     line-height: 22px;
     padding-top: 40px;
@@ -45,27 +43,39 @@ section{
       padding: 2px;
   }
   hr{
-      width: 93%;
-      margin: 30px;   
+      width: 90%;
+      margin: 30px;
+      border: 1px solid #ECECEC;
   }
-  .flex-container-Title{
+  .flex-customerOrder{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* align-self: center; */
-    font-family: Metropolis;
     font-size: 14px;
     line-height: 22px;
-    padding-top: 40px;
-    padding-left: 60px;
-
+    padding: 40px 60px 0px;
   }
-  .flex-container2 {
+  #help{
+      color: #439B83;
+      ;
+  }
+  .i-btn{
+      position: relative;
+      right: 10px;
+      color: #000000;
+      background: #ececec;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #ececec;
+      border-radius: 50%;
+      /* padding: 8px 12px; */
+      margin-bottom: 5px ;
+  }
+  .flex-Heading {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    /* align-self: center; */
-    font-family: Metropolis;
+    color: #999999;
     font-size: 14px;
     line-height: 22px;
     padding-top: 40px;
@@ -73,7 +83,6 @@ section{
   }
   .box{
       display: flex;
-      /* justify-content: space-evenly; */
       background: #FFFFFF;
       padding: 2em;
       width: 90%;
@@ -82,3 +91,75 @@ section{
       border: 1px solid #ECECEC;
       margin: 10px 60px;
   }
+  .onlineTag{
+      position: relative;
+      left: -56px;
+      background-color: #ececec;
+      color: #000000;
+      border-radius: 5px;
+      transform: rotate(-90deg);
+      padding: 6px 16px;
+    }
+  .instoreTag{
+      position: relative;
+      left: -58px;
+      background-color: #000000;
+      color: #FFFFFF;
+      border-radius: 5px;
+      transform: rotate(-90deg);
+      padding: 6px 16px;
+    }
+  .manualTag{
+      position: relative;
+      left: -58px;
+      background-color: #F16500;
+      color: #FFFFFF;
+      border-radius: 5px;
+      transform: rotate(-90deg);
+      padding: 6px 16px;
+    }
+    .upsell{
+        position: relative;
+        left: -90px;
+        width: 24px;
+        height: 24px;
+        background: #FFFFFF;
+        border: 1px solid #968484;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+    .upsell img{
+        margin:5px 5px;
+    }
+    .orderNumber{
+        color: #0A8F73;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    #orderNumber{
+        position: relative;
+        left: 5px;
+    }
+    .pagination {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bold;
+        margin: 40px 50px;
+      }
+      .pagination a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+      .pagination a.active {
+        background-color: #439B83;
+        color: white;
+        font-size: 14px;
+        border-radius: 50%;
+      }
+      .pagination a.inactive{
+          color: #999999;
+      }
+      .pagination a:hover:not(.active,.inactive) {
+          color: #439B83;
+      }
